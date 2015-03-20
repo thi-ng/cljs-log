@@ -39,6 +39,7 @@ Alternatively, if using the `lein-environ` plugin, log levels can be
 configured for different lein profiles:
 
 ```clj
+:plugins  [[lein-environ "1.0.0"]]
 :profiles {:dev        {:env {:log-level 2}   ;; info+
            :production {:env {:log-level 4}}} ;; severe only
 ```
