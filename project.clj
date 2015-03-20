@@ -1,4 +1,4 @@
-(defproject cljs-log "0.1.0"
+(defproject cljs-log "0.2.0"
   :description  "Logging macros for Clojurescript"
   :url          "https://github.com/postspectacular/cljs-log"
   :license      {:name "Apache Software License 2.0"
@@ -12,7 +12,7 @@
                  [lein-environ "1.0.0"]]
 
   :cljsbuild    {:builds [{:id "dev"
-                           :source-paths ["src"]
+                           :source-paths ["src" "test"]
                            :compiler {:output-to "resources/public/js/app.js"
                                       :optimizations :whitespace}}]}
 
