@@ -1,12 +1,12 @@
 # cljs-log
 
 Logging macros for Clojurescript. Depending on configured log level,
-logging calls will be elided from resulting compiled JS...
+logging calls will be *fully* elided from resulting compiled JS...
 
 ## Leiningen coordinates
 
 ```clj
-[cljs-log "0.1.0"]
+[cljs-log "0.2.1"]
 ```
 
 ## Usage
@@ -26,6 +26,7 @@ Compile Clojurescript with log level env var (by default *all* levels are enable
 * 2 => info or higher
 * 3 => warn or higher
 * 4 => severe only
+* 5 => nothing
 
 ```
 LOG_LEVEL=3 lein cljsbuild once production

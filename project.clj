@@ -1,4 +1,4 @@
-(defproject cljs-log "0.2.0"
+(defproject cljs-log "0.2.1"
   :description  "Logging macros for Clojurescript"
   :url          "https://github.com/postspectacular/cljs-log"
   :license      {:name "Apache Software License 2.0"
