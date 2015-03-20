@@ -12,9 +12,9 @@ logging calls will be *fully* elided from resulting compiled JS...
 ## Usage
 
 ```clj
-(require '[cljs-log.core :refer [debug info warn severe]])
-
-(enable-console-print!)
+(ns example
+  (:require-macros
+   [cljs-log.core :refer [debug info warn severe]]))
 
 (debug "hello world" {:a 23 :b 42})
 ;; Fri Mar 20 2015 02:41:00 GMT+0000 (GMT) "DEBUG hello world {:a 23 :b 42}"
