@@ -16,8 +16,8 @@ logging calls will be elided from resulting compiled JS...
 
 (enable-console-print!)
 
-(debug "foo bar" {:a 23 :b 42})
-;; 
+(debug "hello world" {:a 23 :b 42})
+;; Fri Mar 20 2015 02:41:00 GMT+0000 (GMT) "DEBUG hello world {:a 23 :b 42}"
 ```
 
 Compile Clojurescript with log level env var (by default *all* levels are enabled):
@@ -39,8 +39,8 @@ Alternatively, if using the `lein-environ` plugin, log levels can be
 configured for different lein profiles:
 
 ```clj
-:profiles {:dev        {:env {:log-level 2}
-           :production {:env {:log-level 4}}}
+:profiles {:dev        {:env {:log-level 2}   ;; info+
+           :production {:env {:log-level 4}}} ;; severe only
 ```
 
 ## License
