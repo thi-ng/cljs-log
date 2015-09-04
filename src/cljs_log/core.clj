@@ -20,4 +20,4 @@
 (deflogfn debug  1 'debug)
 (deflogfn info   2 'info)
 (deflogfn warn   3 'warn)
-(deflogfn severe 4 'warn)
+(deflogfn severe 4 'error)
