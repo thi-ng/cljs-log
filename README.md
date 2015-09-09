@@ -6,7 +6,7 @@ logging calls will be *fully* elided from resulting compiled JS...
 ## Leiningen coordinates
 
 ```clj
-[cljs-log "0.2.1"]
+[cljs-log "0.2.2"]
 ```
 
 ## Usage
